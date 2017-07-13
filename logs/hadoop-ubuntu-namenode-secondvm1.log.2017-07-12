@@ -1,0 +1,305 @@
+2017-07-12 04:29:05,660 INFO org.apache.hadoop.dfs.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = secondvm1/192.168.1.155
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.18.1-dev
+STARTUP_MSG:   build =  -r ; compiled by 'ubuntu' on Mon Jul  3 19:46:13 CEST 2017
+************************************************************/
+2017-07-12 04:29:05,750 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=NameNode, port=9000
+2017-07-12 04:29:05,755 INFO org.apache.hadoop.dfs.NameNode: Namenode up at: secondvm1/192.168.1.155:9000
+2017-07-12 04:29:05,757 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=NameNode, sessionId=null
+2017-07-12 04:29:05,761 INFO org.apache.hadoop.dfs.NameNodeMetrics: Initializing NameNodeMeterics using context object:org.apache.hadoop.metrics.spi.NullContext
+2017-07-12 04:29:05,808 INFO org.apache.hadoop.fs.FSNamesystem: fsOwner=ubuntu,ubuntu,adm,dialout,cdrom,plugdev,lpadmin,sambashare,admin
+2017-07-12 04:29:05,808 INFO org.apache.hadoop.fs.FSNamesystem: supergroup=supergroup
+2017-07-12 04:29:05,808 INFO org.apache.hadoop.fs.FSNamesystem: isPermissionEnabled=true
+2017-07-12 04:29:05,813 INFO org.apache.hadoop.dfs.FSNamesystemMetrics: Initializing FSNamesystemMeterics using context object:org.apache.hadoop.metrics.spi.NullContext
+2017-07-12 04:29:05,813 INFO org.apache.hadoop.fs.FSNamesystem: Registered FSNamesystemStatusMBean
+2017-07-12 04:29:05,836 INFO org.apache.hadoop.dfs.Storage: Number of files = 8
+2017-07-12 04:29:05,841 INFO org.apache.hadoop.dfs.Storage: Number of files under construction = 0
+2017-07-12 04:29:05,841 INFO org.apache.hadoop.dfs.Storage: Image file of size 1158 loaded in 0 seconds.
+2017-07-12 04:29:05,841 INFO org.apache.hadoop.dfs.Storage: Edits file edits of size 4 edits # 0 loaded in 0 seconds.
+2017-07-12 04:29:05,842 INFO org.apache.hadoop.fs.FSNamesystem: Finished loading FSImage in 46 msecs
+2017-07-12 04:29:05,847 INFO org.apache.hadoop.dfs.StateChange: STATE* Safe mode ON. 
+The ratio of reported blocks 0.0000 has not reached the threshold 0.9990. Safe mode will be turned off automatically.
+2017-07-12 04:29:05,917 INFO org.mortbay.util.Credential: Checking Resource aliases
+2017-07-12 04:29:05,961 INFO org.mortbay.http.HttpServer: Version Jetty/5.1.4
+2017-07-12 04:29:05,962 INFO org.mortbay.util.Container: Started HttpContext[/static,/static]
+2017-07-12 04:29:05,962 INFO org.mortbay.util.Container: Started HttpContext[/logs,/logs]
+2017-07-12 04:29:06,349 INFO org.mortbay.util.Container: Started org.mortbay.jetty.servlet.WebApplicationHandler@18bbe2b
+2017-07-12 04:29:06,411 INFO org.mortbay.util.Container: Started WebApplicationContext[/,/]
+2017-07-12 04:29:06,430 INFO org.mortbay.http.SocketListener: Started SocketListener on 0.0.0.0:50070
+2017-07-12 04:29:06,430 INFO org.mortbay.util.Container: Started org.mortbay.jetty.Server@45ac89
+2017-07-12 04:29:06,430 INFO org.apache.hadoop.fs.FSNamesystem: Web-server up at: 0.0.0.0:50070
+2017-07-12 04:29:06,438 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2017-07-12 04:29:06,447 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 9000: starting
+2017-07-12 04:29:06,454 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 9000: starting
+2017-07-12 04:29:06,462 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 9000: starting
+2017-07-12 04:29:06,467 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 9000: starting
+2017-07-12 04:29:06,474 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 9000: starting
+2017-07-12 04:29:06,482 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 9000: starting
+2017-07-12 04:29:06,495 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 9000: starting
+2017-07-12 04:29:06,495 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 9000: starting
+2017-07-12 04:29:06,495 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 9000: starting
+2017-07-12 04:29:06,496 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 9000: starting
+2017-07-12 04:29:06,512 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 9000: starting
+2017-07-12 04:29:07,796 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.registerDatanode: node registration from 192.168.1.158:50010 storage DS-1350005183-192.168.1.158-50010-1495296352631
+2017-07-12 04:29:07,801 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/192.168.1.158:50010
+2017-07-12 04:29:07,801 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.registerDatanode: node registration from 192.168.1.159:50010 storage DS-2051926727-192.168.1.159-50010-1495296278987
+2017-07-12 04:29:07,802 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/192.168.1.159:50010
+2017-07-12 04:29:07,804 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.registerDatanode: node registration from 192.168.1.156:50010 storage DS-617771068-192.168.1.156-50010-1495296278687
+2017-07-12 04:29:07,805 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/192.168.1.156:50010
+2017-07-12 04:29:07,832 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.registerDatanode: node registration from 192.168.1.157:50010 storage DS-389736352-192.168.1.157-50010-1495296279366
+2017-07-12 04:29:07,832 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/192.168.1.157:50010
+2017-07-12 04:29:10,453 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 9000, call delete(/home/ubuntu/old_hadoop_temp/mapred/system, true) from 192.168.1.155:34639: error: org.apache.hadoop.dfs.SafeModeException: Cannot delete /home/ubuntu/old_hadoop_temp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 0.0000 has not reached the threshold 0.9990. Safe mode will be turned off automatically.
+org.apache.hadoop.dfs.SafeModeException: Cannot delete /home/ubuntu/old_hadoop_temp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 0.0000 has not reached the threshold 0.9990. Safe mode will be turned off automatically.
+	at org.apache.hadoop.dfs.FSNamesystem.deleteInternal(FSNamesystem.java:1494)
+	at org.apache.hadoop.dfs.FSNamesystem.delete(FSNamesystem.java:1466)
+	at org.apache.hadoop.dfs.NameNode.delete(NameNode.java:425)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:452)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:888)
+2017-07-12 04:29:10,817 INFO org.apache.hadoop.dfs.StateChange: STATE* Safe mode extension entered. 
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 29 seconds.
+2017-07-12 04:29:20,460 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 9000, call delete(/home/ubuntu/old_hadoop_temp/mapred/system, true) from 192.168.1.155:34640: error: org.apache.hadoop.dfs.SafeModeException: Cannot delete /home/ubuntu/old_hadoop_temp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 20 seconds.
+org.apache.hadoop.dfs.SafeModeException: Cannot delete /home/ubuntu/old_hadoop_temp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 20 seconds.
+	at org.apache.hadoop.dfs.FSNamesystem.deleteInternal(FSNamesystem.java:1494)
+	at org.apache.hadoop.dfs.FSNamesystem.delete(FSNamesystem.java:1466)
+	at org.apache.hadoop.dfs.NameNode.delete(NameNode.java:425)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:452)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:888)
+2017-07-12 04:29:30,466 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 9000, call delete(/home/ubuntu/old_hadoop_temp/mapred/system, true) from 192.168.1.155:34641: error: org.apache.hadoop.dfs.SafeModeException: Cannot delete /home/ubuntu/old_hadoop_temp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 10 seconds.
+org.apache.hadoop.dfs.SafeModeException: Cannot delete /home/ubuntu/old_hadoop_temp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 10 seconds.
+	at org.apache.hadoop.dfs.FSNamesystem.deleteInternal(FSNamesystem.java:1494)
+	at org.apache.hadoop.dfs.FSNamesystem.delete(FSNamesystem.java:1466)
+	at org.apache.hadoop.dfs.NameNode.delete(NameNode.java:425)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:452)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:888)
+2017-07-12 04:29:30,823 INFO org.apache.hadoop.dfs.StateChange: STATE* Safe mode ON. 
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 9 seconds.
+2017-07-12 04:29:40,473 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 9000, call delete(/home/ubuntu/old_hadoop_temp/mapred/system, true) from 192.168.1.155:34642: error: org.apache.hadoop.dfs.SafeModeException: Cannot delete /home/ubuntu/old_hadoop_temp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 0 seconds.
+org.apache.hadoop.dfs.SafeModeException: Cannot delete /home/ubuntu/old_hadoop_temp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 0 seconds.
+	at org.apache.hadoop.dfs.FSNamesystem.deleteInternal(FSNamesystem.java:1494)
+	at org.apache.hadoop.dfs.FSNamesystem.delete(FSNamesystem.java:1466)
+	at org.apache.hadoop.dfs.NameNode.delete(NameNode.java:425)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:452)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:888)
+2017-07-12 04:29:40,826 INFO org.apache.hadoop.fs.FSNamesystem: Total number of blocks = 24
+2017-07-12 04:29:40,826 INFO org.apache.hadoop.fs.FSNamesystem: Number of invalid blocks = 0
+2017-07-12 04:29:40,826 INFO org.apache.hadoop.fs.FSNamesystem: Number of under-replicated blocks = 0
+2017-07-12 04:29:40,826 INFO org.apache.hadoop.fs.FSNamesystem: Number of  over-replicated blocks = 0
+2017-07-12 04:29:40,826 INFO org.apache.hadoop.dfs.StateChange: STATE* Leaving safe mode after 35 secs.
+2017-07-12 04:29:40,827 INFO org.apache.hadoop.dfs.StateChange: STATE* Safe mode is OFF.
+2017-07-12 04:29:40,827 INFO org.apache.hadoop.dfs.StateChange: STATE* Network topology has 1 racks and 4 datanodes
+2017-07-12 04:29:40,827 INFO org.apache.hadoop.dfs.StateChange: STATE* UnderReplicatedBlocks has 0 blocks
+2017-07-12 04:34:09,514 INFO org.apache.hadoop.fs.FSNamesystem: Roll Edit Log from 192.168.1.155
+2017-07-12 04:34:09,514 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 3 Total time for transactions(ms): 2 Number of syncs: 3 SyncTimes(ms): 34 
+2017-07-12 04:34:09,902 INFO org.apache.hadoop.fs.FSNamesystem: Roll FSImage from 192.168.1.155
+2017-07-12 04:34:09,902 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 04:38:09,804 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 04:38:09,881 WARN org.apache.hadoop.fs.FSNamesystem: Not able to place enough replicas, still in need of 3
+2017-07-12 04:38:09,882 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.allocateBlock: /home/ubuntu/old_hadoop_temp/mapred/system/job_201707120429_0001/job.jar. blk_8955621730629061844_4082
+2017-07-12 04:38:09,955 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.1.156:50010 is added to blk_8955621730629061844_4082 size 91176
+2017-07-12 04:38:09,964 INFO org.apache.hadoop.fs.FSNamesystem: Increasing replication for file /home/ubuntu/old_hadoop_temp/mapred/system/job_201707120429_0001/job.jar. New replication is 10
+2017-07-12 04:38:10,020 WARN org.apache.hadoop.fs.FSNamesystem: Not able to place enough replicas, still in need of 3
+2017-07-12 04:38:10,021 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.allocateBlock: /home/ubuntu/old_hadoop_temp/mapred/system/job_201707120429_0001/job.split. blk_-6433000240274330684_4083
+2017-07-12 04:38:10,029 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.1.156:50010 is added to blk_-6433000240274330684_4083 size 1085
+2017-07-12 04:38:10,082 WARN org.apache.hadoop.fs.FSNamesystem: Not able to place enough replicas, still in need of 3
+2017-07-12 04:38:10,083 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.allocateBlock: /home/ubuntu/old_hadoop_temp/mapred/system/job_201707120429_0001/job.xml. blk_3441320984411717162_4084
+2017-07-12 04:38:10,093 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.1.156:50010 is added to blk_3441320984411717162_4084 size 13560
+2017-07-12 04:38:10,315 WARN org.apache.hadoop.fs.FSNamesystem: Not able to place enough replicas, still in need of 3
+2017-07-12 04:38:10,315 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.allocateBlock: /twitter_output/_logs/history/secondvm1_1499826549889_job_201707120429_0001_conf.xml. blk_-6301074080543035769_4086
+2017-07-12 04:38:10,336 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.1.156:50010 is added to blk_-6301074080543035769_4086 size 13545
+2017-07-12 04:38:11,972 INFO org.apache.hadoop.dfs.StateChange: BLOCK* ask 192.168.1.156:50010 to replicate blk_-6433000240274330684_4083 to datanode(s) 192.168.1.158:50010 192.168.1.159:50010
+2017-07-12 04:38:11,972 INFO org.apache.hadoop.dfs.StateChange: BLOCK* ask 192.168.1.156:50010 to replicate blk_-6301074080543035769_4086 to datanode(s) 192.168.1.159:50010
+2017-07-12 04:38:14,004 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.1.158:50010 is added to blk_-6433000240274330684_4083 size 1085
+2017-07-12 04:38:14,019 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.1.159:50010 is added to blk_-6433000240274330684_4083 size 1085
+2017-07-12 04:38:14,973 INFO org.apache.hadoop.dfs.StateChange: BLOCK* ask 192.168.1.156:50010 to replicate blk_-6301074080543035769_4086 to datanode(s) 192.168.1.157:50010
+2017-07-12 04:38:14,975 INFO org.apache.hadoop.dfs.StateChange: BLOCK* ask 192.168.1.159:50010 to replicate blk_-6433000240274330684_4083 to datanode(s) 192.168.1.157:50010
+2017-07-12 04:38:16,988 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.1.159:50010 is added to blk_-6301074080543035769_4086 size 13545
+2017-07-12 04:38:17,001 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.1.157:50010 is added to blk_-6301074080543035769_4086 size 13545
+2017-07-12 04:38:17,025 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.1.157:50010 is added to blk_-6433000240274330684_4083 size 1085
+2017-07-12 04:38:17,975 INFO org.apache.hadoop.dfs.StateChange: BLOCK* ask 192.168.1.156:50010 to replicate blk_3441320984411717162_4084 to datanode(s) 192.168.1.157:50010 192.168.1.159:50010
+2017-07-12 04:38:17,976 INFO org.apache.hadoop.dfs.StateChange: BLOCK* ask 192.168.1.156:50010 to replicate blk_8955621730629061844_4082 to datanode(s) 192.168.1.158:50010
+2017-07-12 04:38:17,976 INFO org.apache.hadoop.dfs.StateChange: BLOCK* ask 192.168.1.159:50010 to replicate blk_-6301074080543035769_4086 to datanode(s) 192.168.1.158:50010
+2017-07-12 04:38:20,007 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.1.157:50010 is added to blk_3441320984411717162_4084 size 13560
+2017-07-12 04:38:20,008 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.1.159:50010 is added to blk_3441320984411717162_4084 size 13560
+2017-07-12 04:38:20,018 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.1.158:50010 is added to blk_-6301074080543035769_4086 size 13545
+2017-07-12 04:38:20,977 INFO org.apache.hadoop.dfs.StateChange: BLOCK* ask 192.168.1.156:50010 to replicate blk_8955621730629061844_4082 to datanode(s) 192.168.1.158:50010
+2017-07-12 04:38:20,977 INFO org.apache.hadoop.dfs.StateChange: BLOCK* ask 192.168.1.157:50010 to replicate blk_3441320984411717162_4084 to datanode(s) 192.168.1.158:50010
+2017-07-12 04:38:22,997 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.1.158:50010 is added to blk_8955621730629061844_4082 size 91176
+2017-07-12 04:38:23,050 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.1.158:50010 is added to blk_3441320984411717162_4084 size 13560
+2017-07-12 04:38:23,978 INFO org.apache.hadoop.dfs.StateChange: BLOCK* ask 192.168.1.156:50010 to replicate blk_8955621730629061844_4082 to datanode(s) 192.168.1.159:50010 192.168.1.157:50010
+2017-07-12 04:38:25,993 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.1.159:50010 is added to blk_8955621730629061844_4082 size 91176
+2017-07-12 04:38:26,002 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.1.157:50010 is added to blk_8955621730629061844_4082 size 91176
+2017-07-12 04:40:10,892 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 25 Total time for transactions(ms): 1 Number of syncs: 16 SyncTimes(ms): 75 
+2017-07-12 04:40:10,968 WARN org.apache.hadoop.fs.FSNamesystem: Not able to place enough replicas, still in need of 3
+2017-07-12 04:40:10,968 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.allocateBlock: /twitter_output/_temporary/_attempt_201707120429_0001_r_000003_0/part-00003. blk_4042255888369729427_4087
+2017-07-12 04:40:13,880 WARN org.apache.hadoop.fs.FSNamesystem: Not able to place enough replicas, still in need of 3
+2017-07-12 04:40:13,881 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.allocateBlock: /twitter_output/_temporary/_attempt_201707120429_0001_r_000001_0/part-00001. blk_7339165748192959613_4089
+2017-07-12 04:40:13,937 WARN org.apache.hadoop.fs.FSNamesystem: Not able to place enough replicas, still in need of 3
+2017-07-12 04:40:13,937 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.allocateBlock: /twitter_output/_temporary/_attempt_201707120429_0001_r_000002_0/part-00002. blk_-2580236725817453934_4090
+2017-07-12 04:40:13,952 WARN org.apache.hadoop.fs.FSNamesystem: Not able to place enough replicas, still in need of 3
+2017-07-12 04:40:13,953 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.allocateBlock: /twitter_output/_temporary/_attempt_201707120429_0001_r_000000_0/part-00000. blk_-2045068406770025894_4090
+2017-07-12 04:40:15,219 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.1.156:50010 is added to blk_4042255888369729427_4087 size 31964396
+2017-07-12 04:40:17,999 WARN org.apache.hadoop.fs.FSNamesystem: Not able to place enough replicas, still in need of 2
+2017-07-12 04:40:18,160 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.1.156:50010 is added to blk_7339165748192959613_4089 size 31976695
+2017-07-12 04:40:18,287 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.1.156:50010 is added to blk_-2580236725817453934_4090 size 31980463
+2017-07-12 04:40:18,725 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.1.156:50010 is added to blk_-2045068406770025894_4090 size 31981189
+2017-07-12 04:40:18,915 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.delete: blk_8955621730629061844 is added to invalidSet of 192.168.1.156:50010
+2017-07-12 04:40:18,916 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.delete: blk_8955621730629061844 is added to invalidSet of 192.168.1.158:50010
+2017-07-12 04:40:18,916 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.delete: blk_8955621730629061844 is added to invalidSet of 192.168.1.159:50010
+2017-07-12 04:40:18,916 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.delete: blk_8955621730629061844 is added to invalidSet of 192.168.1.157:50010
+2017-07-12 04:40:18,916 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.delete: blk_-6433000240274330684 is added to invalidSet of 192.168.1.156:50010
+2017-07-12 04:40:18,916 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.delete: blk_-6433000240274330684 is added to invalidSet of 192.168.1.158:50010
+2017-07-12 04:40:18,916 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.delete: blk_-6433000240274330684 is added to invalidSet of 192.168.1.159:50010
+2017-07-12 04:40:18,916 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.delete: blk_-6433000240274330684 is added to invalidSet of 192.168.1.157:50010
+2017-07-12 04:40:18,916 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.delete: blk_3441320984411717162 is added to invalidSet of 192.168.1.156:50010
+2017-07-12 04:40:18,916 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.delete: blk_3441320984411717162 is added to invalidSet of 192.168.1.157:50010
+2017-07-12 04:40:18,916 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.delete: blk_3441320984411717162 is added to invalidSet of 192.168.1.159:50010
+2017-07-12 04:40:18,916 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.delete: blk_3441320984411717162 is added to invalidSet of 192.168.1.158:50010
+2017-07-12 04:40:18,928 WARN org.apache.hadoop.fs.FSNamesystem: Not able to place enough replicas, still in need of 4
+2017-07-12 04:40:18,928 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 9000, call addBlock(/twitter_output/_logs/history/secondvm1_1499826549889_job_201707120429_0001_ubuntu_wordcount, DFSClient_-928040547) from 192.168.1.155:34670: error: java.io.IOException: File /twitter_output/_logs/history/secondvm1_1499826549889_job_201707120429_0001_ubuntu_wordcount could only be replicated to 0 nodes, instead of 1
+java.io.IOException: File /twitter_output/_logs/history/secondvm1_1499826549889_job_201707120429_0001_ubuntu_wordcount could only be replicated to 0 nodes, instead of 1
+	at org.apache.hadoop.dfs.FSNamesystem.getAdditionalBlock(FSNamesystem.java:1117)
+	at org.apache.hadoop.dfs.NameNode.addBlock(NameNode.java:330)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:452)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:888)
+2017-07-12 04:40:19,332 WARN org.apache.hadoop.fs.FSNamesystem: Not able to place enough replicas, still in need of 4
+2017-07-12 04:40:19,332 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 9000, call addBlock(/twitter_output/_logs/history/secondvm1_1499826549889_job_201707120429_0001_ubuntu_wordcount, DFSClient_-928040547) from 192.168.1.155:34670: error: java.io.IOException: File /twitter_output/_logs/history/secondvm1_1499826549889_job_201707120429_0001_ubuntu_wordcount could only be replicated to 0 nodes, instead of 1
+java.io.IOException: File /twitter_output/_logs/history/secondvm1_1499826549889_job_201707120429_0001_ubuntu_wordcount could only be replicated to 0 nodes, instead of 1
+	at org.apache.hadoop.dfs.FSNamesystem.getAdditionalBlock(FSNamesystem.java:1117)
+	at org.apache.hadoop.dfs.NameNode.addBlock(NameNode.java:330)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:452)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:888)
+2017-07-12 04:40:20,135 WARN org.apache.hadoop.fs.FSNamesystem: Not able to place enough replicas, still in need of 3
+2017-07-12 04:40:20,135 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.allocateBlock: /twitter_output/_logs/history/secondvm1_1499826549889_job_201707120429_0001_ubuntu_wordcount. blk_-1961337873893792092_4090
+2017-07-12 04:40:20,145 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.1.156:50010 is added to blk_-1961337873893792092_4090 size 16694
+2017-07-12 04:40:21,000 WARN org.apache.hadoop.fs.FSNamesystem: Not able to place enough replicas, still in need of 2
+2017-07-12 04:40:21,000 INFO org.apache.hadoop.dfs.StateChange: BLOCK* ask 192.168.1.156:50010 to replicate blk_-1961337873893792092_4090 to datanode(s) 192.168.1.157:50010 192.168.1.158:50010
+2017-07-12 04:40:21,001 WARN org.apache.hadoop.fs.FSNamesystem: Not able to place enough replicas, still in need of 1
+2017-07-12 04:40:21,001 WARN org.apache.hadoop.fs.FSNamesystem: Not able to place enough replicas, still in need of 1
+2017-07-12 04:40:23,037 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.1.157:50010 is added to blk_-1961337873893792092_4090 size 16694
+2017-07-12 04:40:23,037 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 192.168.1.158:50010 is added to blk_-1961337873893792092_4090 size 16694
+2017-07-12 04:40:23,621 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.delete: blk_-6301074080543035769 is added to invalidSet of 192.168.1.156:50010
+2017-07-12 04:40:23,621 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.delete: blk_-6301074080543035769 is added to invalidSet of 192.168.1.159:50010
+2017-07-12 04:40:23,621 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.delete: blk_-6301074080543035769 is added to invalidSet of 192.168.1.157:50010
+2017-07-12 04:40:23,621 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.delete: blk_-6301074080543035769 is added to invalidSet of 192.168.1.158:50010
+2017-07-12 04:40:23,621 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.delete: blk_-1961337873893792092 is added to invalidSet of 192.168.1.156:50010
+2017-07-12 04:40:23,621 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.delete: blk_-1961337873893792092 is added to invalidSet of 192.168.1.157:50010
+2017-07-12 04:40:23,621 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.delete: blk_-1961337873893792092 is added to invalidSet of 192.168.1.158:50010
+2017-07-12 04:40:23,621 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.delete: blk_-2045068406770025894 is added to invalidSet of 192.168.1.156:50010
+2017-07-12 04:40:23,621 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.delete: blk_7339165748192959613 is added to invalidSet of 192.168.1.156:50010
+2017-07-12 04:40:23,621 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.delete: blk_-2580236725817453934 is added to invalidSet of 192.168.1.156:50010
+2017-07-12 04:40:23,622 INFO org.apache.hadoop.dfs.StateChange: BLOCK* NameSystem.delete: blk_4042255888369729427 is added to invalidSet of 192.168.1.156:50010
+2017-07-12 04:40:24,002 INFO org.apache.hadoop.dfs.StateChange: BLOCK* ask 192.168.1.158:50010 to delete  blk_-6433000240274330684_4083 blk_3441320984411717162_4084 blk_-1961337873893792092_4090 blk_8955621730629061844_4082 blk_-6301074080543035769_4086
+2017-07-12 04:40:24,003 INFO org.apache.hadoop.dfs.StateChange: BLOCK* ask 192.168.1.159:50010 to delete  blk_-6433000240274330684_4083 blk_3441320984411717162_4084 blk_8955621730629061844_4082 blk_-6301074080543035769_4086
+2017-07-12 04:40:27,003 INFO org.apache.hadoop.dfs.StateChange: BLOCK* ask 192.168.1.157:50010 to delete  blk_-6433000240274330684_4083 blk_3441320984411717162_4084 blk_-1961337873893792092_4090 blk_8955621730629061844_4082 blk_-6301074080543035769_4086
+2017-07-12 04:40:27,004 INFO org.apache.hadoop.dfs.StateChange: BLOCK* ask 192.168.1.156:50010 to delete  blk_-6433000240274330684_4083 blk_3441320984411717162_4084 blk_-1961337873893792092_4090 blk_8955621730629061844_4082 blk_7339165748192959613_4089 blk_4042255888369729427_4087 blk_-2045068406770025894_4090 blk_-6301074080543035769_4086 blk_-2580236725817453934_4090
+2017-07-12 05:34:10,000 INFO org.apache.hadoop.fs.FSNamesystem: Roll Edit Log from 192.168.1.155
+2017-07-12 05:34:10,001 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 52 Total time for transactions(ms): 3 Number of syncs: 40 SyncTimes(ms): 137 
+2017-07-12 05:34:10,080 INFO org.apache.hadoop.fs.FSNamesystem: Roll FSImage from 192.168.1.155
+2017-07-12 05:34:10,080 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 06:34:10,181 INFO org.apache.hadoop.fs.FSNamesystem: Roll Edit Log from 192.168.1.155
+2017-07-12 06:34:10,181 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 06:34:10,248 INFO org.apache.hadoop.fs.FSNamesystem: Roll FSImage from 192.168.1.155
+2017-07-12 06:34:10,249 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 07:34:10,337 INFO org.apache.hadoop.fs.FSNamesystem: Roll Edit Log from 192.168.1.155
+2017-07-12 07:34:10,338 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 07:34:10,399 INFO org.apache.hadoop.fs.FSNamesystem: Roll FSImage from 192.168.1.155
+2017-07-12 07:34:10,399 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 08:34:10,472 INFO org.apache.hadoop.fs.FSNamesystem: Roll Edit Log from 192.168.1.155
+2017-07-12 08:34:10,472 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 08:34:10,541 INFO org.apache.hadoop.fs.FSNamesystem: Roll FSImage from 192.168.1.155
+2017-07-12 08:34:10,541 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 09:34:10,615 INFO org.apache.hadoop.fs.FSNamesystem: Roll Edit Log from 192.168.1.155
+2017-07-12 09:34:10,616 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 09:34:10,697 INFO org.apache.hadoop.fs.FSNamesystem: Roll FSImage from 192.168.1.155
+2017-07-12 09:34:10,698 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 10:34:10,773 INFO org.apache.hadoop.fs.FSNamesystem: Roll Edit Log from 192.168.1.155
+2017-07-12 10:34:10,773 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 10:34:10,841 INFO org.apache.hadoop.fs.FSNamesystem: Roll FSImage from 192.168.1.155
+2017-07-12 10:34:10,841 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 11:34:10,908 INFO org.apache.hadoop.fs.FSNamesystem: Roll Edit Log from 192.168.1.155
+2017-07-12 11:34:10,908 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 11:34:10,966 INFO org.apache.hadoop.fs.FSNamesystem: Roll FSImage from 192.168.1.155
+2017-07-12 11:34:10,966 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 12:34:11,039 INFO org.apache.hadoop.fs.FSNamesystem: Roll Edit Log from 192.168.1.155
+2017-07-12 12:34:11,039 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 12:34:11,108 INFO org.apache.hadoop.fs.FSNamesystem: Roll FSImage from 192.168.1.155
+2017-07-12 12:34:11,108 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 13:34:11,182 INFO org.apache.hadoop.fs.FSNamesystem: Roll Edit Log from 192.168.1.155
+2017-07-12 13:34:11,182 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 13:34:11,257 INFO org.apache.hadoop.fs.FSNamesystem: Roll FSImage from 192.168.1.155
+2017-07-12 13:34:11,257 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 14:34:11,331 INFO org.apache.hadoop.fs.FSNamesystem: Roll Edit Log from 192.168.1.155
+2017-07-12 14:34:11,332 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 14:34:11,401 INFO org.apache.hadoop.fs.FSNamesystem: Roll FSImage from 192.168.1.155
+2017-07-12 14:34:11,401 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 15:34:11,468 INFO org.apache.hadoop.fs.FSNamesystem: Roll Edit Log from 192.168.1.155
+2017-07-12 15:34:11,468 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 15:34:11,537 INFO org.apache.hadoop.fs.FSNamesystem: Roll FSImage from 192.168.1.155
+2017-07-12 15:34:11,537 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 16:34:11,606 INFO org.apache.hadoop.fs.FSNamesystem: Roll Edit Log from 192.168.1.155
+2017-07-12 16:34:11,606 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 16:34:11,675 INFO org.apache.hadoop.fs.FSNamesystem: Roll FSImage from 192.168.1.155
+2017-07-12 16:34:11,675 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 17:34:11,747 INFO org.apache.hadoop.fs.FSNamesystem: Roll Edit Log from 192.168.1.155
+2017-07-12 17:34:11,748 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 17:34:11,816 INFO org.apache.hadoop.fs.FSNamesystem: Roll FSImage from 192.168.1.155
+2017-07-12 17:34:11,817 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 18:34:11,891 INFO org.apache.hadoop.fs.FSNamesystem: Roll Edit Log from 192.168.1.155
+2017-07-12 18:34:11,891 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 18:34:11,955 INFO org.apache.hadoop.fs.FSNamesystem: Roll FSImage from 192.168.1.155
+2017-07-12 18:34:11,955 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 19:34:12,028 INFO org.apache.hadoop.fs.FSNamesystem: Roll Edit Log from 192.168.1.155
+2017-07-12 19:34:12,028 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 19:34:12,106 INFO org.apache.hadoop.fs.FSNamesystem: Roll FSImage from 192.168.1.155
+2017-07-12 19:34:12,106 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 20:34:12,190 INFO org.apache.hadoop.fs.FSNamesystem: Roll Edit Log from 192.168.1.155
+2017-07-12 20:34:12,190 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 20:34:12,259 INFO org.apache.hadoop.fs.FSNamesystem: Roll FSImage from 192.168.1.155
+2017-07-12 20:34:12,259 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 21:34:12,338 INFO org.apache.hadoop.fs.FSNamesystem: Roll Edit Log from 192.168.1.155
+2017-07-12 21:34:12,338 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 21:34:12,404 INFO org.apache.hadoop.fs.FSNamesystem: Roll FSImage from 192.168.1.155
+2017-07-12 21:34:12,404 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 22:34:12,474 INFO org.apache.hadoop.fs.FSNamesystem: Roll Edit Log from 192.168.1.155
+2017-07-12 22:34:12,474 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 22:34:12,545 INFO org.apache.hadoop.fs.FSNamesystem: Roll FSImage from 192.168.1.155
+2017-07-12 22:34:12,545 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 23:34:12,613 INFO org.apache.hadoop.fs.FSNamesystem: Roll Edit Log from 192.168.1.155
+2017-07-12 23:34:12,614 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 23:34:12,682 INFO org.apache.hadoop.fs.FSNamesystem: Roll FSImage from 192.168.1.155
+2017-07-12 23:34:12,682 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 

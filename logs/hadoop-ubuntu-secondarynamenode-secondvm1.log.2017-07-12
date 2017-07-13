@@ -1,0 +1,302 @@
+2017-07-12 04:29:08,661 INFO org.apache.hadoop.dfs.NameNode.Secondary: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = secondvm1/192.168.1.155
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.18.1-dev
+STARTUP_MSG:   build =  -r ; compiled by 'ubuntu' on Mon Jul  3 19:46:13 CEST 2017
+************************************************************/
+2017-07-12 04:29:08,745 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=SecondaryNameNode, sessionId=null
+2017-07-12 04:29:08,884 WARN org.apache.hadoop.dfs.Storage: Checkpoint directory /home/ubuntu/old_hadoop_temp/dfs/namesecondary is added.
+2017-07-12 04:29:08,944 INFO org.mortbay.util.Credential: Checking Resource aliases
+2017-07-12 04:29:08,983 INFO org.mortbay.http.HttpServer: Version Jetty/5.1.4
+2017-07-12 04:29:08,984 INFO org.mortbay.util.Container: Started HttpContext[/static,/static]
+2017-07-12 04:29:08,984 INFO org.mortbay.util.Container: Started HttpContext[/logs,/logs]
+2017-07-12 04:29:09,451 INFO org.mortbay.jetty.servlet.XMLConfiguration: No WEB-INF/web.xml in file:/home/ubuntu/old_hadoop/build/webapps/secondary. Serving files and default/dynamic servlets only
+2017-07-12 04:29:09,462 INFO org.mortbay.util.Container: Started org.mortbay.jetty.servlet.WebApplicationHandler@dbb5e7
+2017-07-12 04:29:09,496 INFO org.mortbay.util.Container: Started WebApplicationContext[/,/]
+2017-07-12 04:29:09,498 INFO org.mortbay.http.SocketListener: Started SocketListener on 0.0.0.0:50090
+2017-07-12 04:29:09,498 INFO org.mortbay.util.Container: Started org.mortbay.jetty.Server@9e9515
+2017-07-12 04:29:09,498 INFO org.apache.hadoop.dfs.NameNode.Secondary: Secondary Web-server up at: 0.0.0.0:50090
+2017-07-12 04:29:09,498 WARN org.apache.hadoop.dfs.NameNode.Secondary: Checkpoint Period   :3600 secs (60 min)
+2017-07-12 04:29:09,498 WARN org.apache.hadoop.dfs.NameNode.Secondary: Log Size Trigger    :67108864 bytes (65536 KB)
+2017-07-12 04:34:09,513 WARN org.apache.hadoop.dfs.Storage: Checkpoint directory /home/ubuntu/old_hadoop_temp/dfs/namesecondary is added.
+2017-07-12 04:34:09,678 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file fsimage size 1158 bytes.
+2017-07-12 04:34:09,680 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file edits size 199 bytes.
+2017-07-12 04:34:09,727 INFO org.apache.hadoop.fs.FSNamesystem: fsOwner=ubuntu,ubuntu,adm,dialout,cdrom,plugdev,lpadmin,sambashare,admin
+2017-07-12 04:34:09,727 INFO org.apache.hadoop.fs.FSNamesystem: supergroup=supergroup
+2017-07-12 04:34:09,727 INFO org.apache.hadoop.fs.FSNamesystem: isPermissionEnabled=true
+2017-07-12 04:34:09,739 INFO org.apache.hadoop.dfs.Storage: Number of files = 8
+2017-07-12 04:34:09,745 INFO org.apache.hadoop.dfs.Storage: Number of files under construction = 0
+2017-07-12 04:34:09,747 INFO org.apache.hadoop.dfs.Storage: Edits file edits of size 199 edits # 3 loaded in 0 seconds.
+2017-07-12 04:34:09,757 INFO org.apache.hadoop.dfs.Storage: Image file of size 1158 saved in 0 seconds.
+2017-07-12 04:34:09,763 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 04:34:09,801 INFO org.apache.hadoop.dfs.NameNode.Secondary: Posted URL 0.0.0.0:50070putimage=1&port=50090&machine=192.168.1.155&token=-16:450459036:0:1499826590000:1499824706060
+2017-07-12 04:34:09,938 WARN org.apache.hadoop.dfs.NameNode.Secondary: Checkpoint done. New Image Size: 1158
+2017-07-12 05:34:09,997 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 05:34:09,999 WARN org.apache.hadoop.dfs.Storage: Checkpoint directory /home/ubuntu/old_hadoop_temp/dfs/namesecondary is added.
+2017-07-12 05:34:10,013 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file fsimage size 1158 bytes.
+2017-07-12 05:34:10,014 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file edits size 5373 bytes.
+2017-07-12 05:34:10,018 INFO org.apache.hadoop.fs.FSNamesystem: fsOwner=ubuntu,ubuntu,adm,dialout,cdrom,plugdev,lpadmin,sambashare,admin
+2017-07-12 05:34:10,019 INFO org.apache.hadoop.fs.FSNamesystem: supergroup=supergroup
+2017-07-12 05:34:10,019 INFO org.apache.hadoop.fs.FSNamesystem: isPermissionEnabled=true
+2017-07-12 05:34:10,020 INFO org.apache.hadoop.dfs.Storage: Number of files = 8
+2017-07-12 05:34:10,021 INFO org.apache.hadoop.dfs.Storage: Number of files under construction = 0
+2017-07-12 05:34:10,029 ERROR org.apache.hadoop.dfs.LeaseManager: /twitter_output/_logs/history/secondvm1_1499826549889_job_201707120429_0001_conf.xml not found in lease.paths (=[/twitter_output/_logs/history/secondvm1_1499826549889_job_201707120429_0001_ubuntu_wordcount])
+2017-07-12 05:34:10,034 INFO org.apache.hadoop.dfs.Storage: Edits file edits of size 5373 edits # 52 loaded in 0 seconds.
+2017-07-12 05:34:10,038 INFO org.apache.hadoop.dfs.Storage: Image file of size 1158 saved in 0 seconds.
+2017-07-12 05:34:10,044 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 05:34:10,073 INFO org.apache.hadoop.dfs.NameNode.Secondary: Posted URL 0.0.0.0:50070putimage=1&port=50090&machine=192.168.1.155&token=-16:450459036:0:1499827223000:1499826849905
+2017-07-12 05:34:10,118 WARN org.apache.hadoop.dfs.NameNode.Secondary: Checkpoint done. New Image Size: 1158
+2017-07-12 06:34:10,178 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 06:34:10,180 WARN org.apache.hadoop.dfs.Storage: Checkpoint directory /home/ubuntu/old_hadoop_temp/dfs/namesecondary is added.
+2017-07-12 06:34:10,193 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file fsimage size 1158 bytes.
+2017-07-12 06:34:10,195 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file edits size 4 bytes.
+2017-07-12 06:34:10,201 INFO org.apache.hadoop.fs.FSNamesystem: fsOwner=ubuntu,ubuntu,adm,dialout,cdrom,plugdev,lpadmin,sambashare,admin
+2017-07-12 06:34:10,201 INFO org.apache.hadoop.fs.FSNamesystem: supergroup=supergroup
+2017-07-12 06:34:10,201 INFO org.apache.hadoop.fs.FSNamesystem: isPermissionEnabled=true
+2017-07-12 06:34:10,203 INFO org.apache.hadoop.dfs.Storage: Number of files = 8
+2017-07-12 06:34:10,204 INFO org.apache.hadoop.dfs.Storage: Number of files under construction = 0
+2017-07-12 06:34:10,204 INFO org.apache.hadoop.dfs.Storage: Edits file edits of size 4 edits # 0 loaded in 0 seconds.
+2017-07-12 06:34:10,209 INFO org.apache.hadoop.dfs.Storage: Image file of size 1158 saved in 0 seconds.
+2017-07-12 06:34:10,219 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 06:34:10,242 INFO org.apache.hadoop.dfs.NameNode.Secondary: Posted URL 0.0.0.0:50070putimage=1&port=50090&machine=192.168.1.155&token=-16:450459036:0:1499830449000:1499830450083
+2017-07-12 06:34:10,271 WARN org.apache.hadoop.dfs.NameNode.Secondary: Checkpoint done. New Image Size: 1158
+2017-07-12 07:34:10,334 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 07:34:10,336 WARN org.apache.hadoop.dfs.Storage: Checkpoint directory /home/ubuntu/old_hadoop_temp/dfs/namesecondary is added.
+2017-07-12 07:34:10,350 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file fsimage size 1158 bytes.
+2017-07-12 07:34:10,352 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file edits size 4 bytes.
+2017-07-12 07:34:10,361 INFO org.apache.hadoop.fs.FSNamesystem: fsOwner=ubuntu,ubuntu,adm,dialout,cdrom,plugdev,lpadmin,sambashare,admin
+2017-07-12 07:34:10,361 INFO org.apache.hadoop.fs.FSNamesystem: supergroup=supergroup
+2017-07-12 07:34:10,362 INFO org.apache.hadoop.fs.FSNamesystem: isPermissionEnabled=true
+2017-07-12 07:34:10,363 INFO org.apache.hadoop.dfs.Storage: Number of files = 8
+2017-07-12 07:34:10,364 INFO org.apache.hadoop.dfs.Storage: Number of files under construction = 0
+2017-07-12 07:34:10,364 INFO org.apache.hadoop.dfs.Storage: Edits file edits of size 4 edits # 0 loaded in 0 seconds.
+2017-07-12 07:34:10,366 INFO org.apache.hadoop.dfs.Storage: Image file of size 1158 saved in 0 seconds.
+2017-07-12 07:34:10,372 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 07:34:10,393 INFO org.apache.hadoop.dfs.NameNode.Secondary: Posted URL 0.0.0.0:50070putimage=1&port=50090&machine=192.168.1.155&token=-16:450459036:0:1499834050000:1499834050252
+2017-07-12 07:34:10,419 WARN org.apache.hadoop.dfs.NameNode.Secondary: Checkpoint done. New Image Size: 1158
+2017-07-12 08:34:10,469 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 08:34:10,471 WARN org.apache.hadoop.dfs.Storage: Checkpoint directory /home/ubuntu/old_hadoop_temp/dfs/namesecondary is added.
+2017-07-12 08:34:10,483 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file fsimage size 1158 bytes.
+2017-07-12 08:34:10,485 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file edits size 4 bytes.
+2017-07-12 08:34:10,490 INFO org.apache.hadoop.fs.FSNamesystem: fsOwner=ubuntu,ubuntu,adm,dialout,cdrom,plugdev,lpadmin,sambashare,admin
+2017-07-12 08:34:10,491 INFO org.apache.hadoop.fs.FSNamesystem: supergroup=supergroup
+2017-07-12 08:34:10,491 INFO org.apache.hadoop.fs.FSNamesystem: isPermissionEnabled=true
+2017-07-12 08:34:10,491 INFO org.apache.hadoop.dfs.Storage: Number of files = 8
+2017-07-12 08:34:10,492 INFO org.apache.hadoop.dfs.Storage: Number of files under construction = 0
+2017-07-12 08:34:10,493 INFO org.apache.hadoop.dfs.Storage: Edits file edits of size 4 edits # 0 loaded in 0 seconds.
+2017-07-12 08:34:10,497 INFO org.apache.hadoop.dfs.Storage: Image file of size 1158 saved in 0 seconds.
+2017-07-12 08:34:10,504 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 08:34:10,534 INFO org.apache.hadoop.dfs.NameNode.Secondary: Posted URL 0.0.0.0:50070putimage=1&port=50090&machine=192.168.1.155&token=-16:450459036:0:1499837650000:1499837650402
+2017-07-12 08:34:10,566 WARN org.apache.hadoop.dfs.NameNode.Secondary: Checkpoint done. New Image Size: 1158
+2017-07-12 09:34:10,611 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 09:34:10,613 WARN org.apache.hadoop.dfs.Storage: Checkpoint directory /home/ubuntu/old_hadoop_temp/dfs/namesecondary is added.
+2017-07-12 09:34:10,627 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file fsimage size 1158 bytes.
+2017-07-12 09:34:10,629 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file edits size 4 bytes.
+2017-07-12 09:34:10,636 INFO org.apache.hadoop.fs.FSNamesystem: fsOwner=ubuntu,ubuntu,adm,dialout,cdrom,plugdev,lpadmin,sambashare,admin
+2017-07-12 09:34:10,636 INFO org.apache.hadoop.fs.FSNamesystem: supergroup=supergroup
+2017-07-12 09:34:10,636 INFO org.apache.hadoop.fs.FSNamesystem: isPermissionEnabled=true
+2017-07-12 09:34:10,645 INFO org.apache.hadoop.dfs.Storage: Number of files = 8
+2017-07-12 09:34:10,648 INFO org.apache.hadoop.dfs.Storage: Number of files under construction = 0
+2017-07-12 09:34:10,651 INFO org.apache.hadoop.dfs.Storage: Edits file edits of size 4 edits # 0 loaded in 0 seconds.
+2017-07-12 09:34:10,655 INFO org.apache.hadoop.dfs.Storage: Image file of size 1158 saved in 0 seconds.
+2017-07-12 09:34:10,661 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 09:34:10,691 INFO org.apache.hadoop.dfs.NameNode.Secondary: Posted URL 0.0.0.0:50070putimage=1&port=50090&machine=192.168.1.155&token=-16:450459036:0:1499841250000:1499841250544
+2017-07-12 09:34:10,720 WARN org.apache.hadoop.dfs.NameNode.Secondary: Checkpoint done. New Image Size: 1158
+2017-07-12 10:34:10,770 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 10:34:10,772 WARN org.apache.hadoop.dfs.Storage: Checkpoint directory /home/ubuntu/old_hadoop_temp/dfs/namesecondary is added.
+2017-07-12 10:34:10,785 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file fsimage size 1158 bytes.
+2017-07-12 10:34:10,787 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file edits size 4 bytes.
+2017-07-12 10:34:10,793 INFO org.apache.hadoop.fs.FSNamesystem: fsOwner=ubuntu,ubuntu,adm,dialout,cdrom,plugdev,lpadmin,sambashare,admin
+2017-07-12 10:34:10,793 INFO org.apache.hadoop.fs.FSNamesystem: supergroup=supergroup
+2017-07-12 10:34:10,793 INFO org.apache.hadoop.fs.FSNamesystem: isPermissionEnabled=true
+2017-07-12 10:34:10,794 INFO org.apache.hadoop.dfs.Storage: Number of files = 8
+2017-07-12 10:34:10,795 INFO org.apache.hadoop.dfs.Storage: Number of files under construction = 0
+2017-07-12 10:34:10,796 INFO org.apache.hadoop.dfs.Storage: Edits file edits of size 4 edits # 0 loaded in 0 seconds.
+2017-07-12 10:34:10,800 INFO org.apache.hadoop.dfs.Storage: Image file of size 1158 saved in 0 seconds.
+2017-07-12 10:34:10,807 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 10:34:10,834 INFO org.apache.hadoop.dfs.NameNode.Secondary: Posted URL 0.0.0.0:50070putimage=1&port=50090&machine=192.168.1.155&token=-16:450459036:0:1499844850000:1499844850700
+2017-07-12 10:34:10,862 WARN org.apache.hadoop.dfs.NameNode.Secondary: Checkpoint done. New Image Size: 1158
+2017-07-12 11:34:10,905 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 11:34:10,907 WARN org.apache.hadoop.dfs.Storage: Checkpoint directory /home/ubuntu/old_hadoop_temp/dfs/namesecondary is added.
+2017-07-12 11:34:10,921 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file fsimage size 1158 bytes.
+2017-07-12 11:34:10,923 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file edits size 4 bytes.
+2017-07-12 11:34:10,927 INFO org.apache.hadoop.fs.FSNamesystem: fsOwner=ubuntu,ubuntu,adm,dialout,cdrom,plugdev,lpadmin,sambashare,admin
+2017-07-12 11:34:10,927 INFO org.apache.hadoop.fs.FSNamesystem: supergroup=supergroup
+2017-07-12 11:34:10,927 INFO org.apache.hadoop.fs.FSNamesystem: isPermissionEnabled=true
+2017-07-12 11:34:10,928 INFO org.apache.hadoop.dfs.Storage: Number of files = 8
+2017-07-12 11:34:10,928 INFO org.apache.hadoop.dfs.Storage: Number of files under construction = 0
+2017-07-12 11:34:10,929 INFO org.apache.hadoop.dfs.Storage: Edits file edits of size 4 edits # 0 loaded in 0 seconds.
+2017-07-12 11:34:10,932 INFO org.apache.hadoop.dfs.Storage: Image file of size 1158 saved in 0 seconds.
+2017-07-12 11:34:10,939 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 11:34:10,960 INFO org.apache.hadoop.dfs.NameNode.Secondary: Posted URL 0.0.0.0:50070putimage=1&port=50090&machine=192.168.1.155&token=-16:450459036:0:1499848450000:1499848450844
+2017-07-12 11:34:10,988 WARN org.apache.hadoop.dfs.NameNode.Secondary: Checkpoint done. New Image Size: 1158
+2017-07-12 12:34:11,036 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 12:34:11,038 WARN org.apache.hadoop.dfs.Storage: Checkpoint directory /home/ubuntu/old_hadoop_temp/dfs/namesecondary is added.
+2017-07-12 12:34:11,052 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file fsimage size 1158 bytes.
+2017-07-12 12:34:11,054 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file edits size 4 bytes.
+2017-07-12 12:34:11,059 INFO org.apache.hadoop.fs.FSNamesystem: fsOwner=ubuntu,ubuntu,adm,dialout,cdrom,plugdev,lpadmin,sambashare,admin
+2017-07-12 12:34:11,060 INFO org.apache.hadoop.fs.FSNamesystem: supergroup=supergroup
+2017-07-12 12:34:11,060 INFO org.apache.hadoop.fs.FSNamesystem: isPermissionEnabled=true
+2017-07-12 12:34:11,063 INFO org.apache.hadoop.dfs.Storage: Number of files = 8
+2017-07-12 12:34:11,064 INFO org.apache.hadoop.dfs.Storage: Number of files under construction = 0
+2017-07-12 12:34:11,064 INFO org.apache.hadoop.dfs.Storage: Edits file edits of size 4 edits # 0 loaded in 0 seconds.
+2017-07-12 12:34:11,069 INFO org.apache.hadoop.dfs.Storage: Image file of size 1158 saved in 0 seconds.
+2017-07-12 12:34:11,079 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 12:34:11,101 INFO org.apache.hadoop.dfs.NameNode.Secondary: Posted URL 0.0.0.0:50070putimage=1&port=50090&machine=192.168.1.155&token=-16:450459036:0:1499852050000:1499852050969
+2017-07-12 12:34:11,133 WARN org.apache.hadoop.dfs.NameNode.Secondary: Checkpoint done. New Image Size: 1158
+2017-07-12 13:34:11,179 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 13:34:11,181 WARN org.apache.hadoop.dfs.Storage: Checkpoint directory /home/ubuntu/old_hadoop_temp/dfs/namesecondary is added.
+2017-07-12 13:34:11,194 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file fsimage size 1158 bytes.
+2017-07-12 13:34:11,196 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file edits size 4 bytes.
+2017-07-12 13:34:11,201 INFO org.apache.hadoop.fs.FSNamesystem: fsOwner=ubuntu,ubuntu,adm,dialout,cdrom,plugdev,lpadmin,sambashare,admin
+2017-07-12 13:34:11,201 INFO org.apache.hadoop.fs.FSNamesystem: supergroup=supergroup
+2017-07-12 13:34:11,201 INFO org.apache.hadoop.fs.FSNamesystem: isPermissionEnabled=true
+2017-07-12 13:34:11,210 INFO org.apache.hadoop.dfs.Storage: Number of files = 8
+2017-07-12 13:34:11,211 INFO org.apache.hadoop.dfs.Storage: Number of files under construction = 0
+2017-07-12 13:34:11,211 INFO org.apache.hadoop.dfs.Storage: Edits file edits of size 4 edits # 0 loaded in 0 seconds.
+2017-07-12 13:34:11,217 INFO org.apache.hadoop.dfs.Storage: Image file of size 1158 saved in 0 seconds.
+2017-07-12 13:34:11,223 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 13:34:11,250 INFO org.apache.hadoop.dfs.NameNode.Secondary: Posted URL 0.0.0.0:50070putimage=1&port=50090&machine=192.168.1.155&token=-16:450459036:0:1499855651000:1499855651111
+2017-07-12 13:34:11,283 WARN org.apache.hadoop.dfs.NameNode.Secondary: Checkpoint done. New Image Size: 1158
+2017-07-12 14:34:11,329 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 14:34:11,331 WARN org.apache.hadoop.dfs.Storage: Checkpoint directory /home/ubuntu/old_hadoop_temp/dfs/namesecondary is added.
+2017-07-12 14:34:11,344 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file fsimage size 1158 bytes.
+2017-07-12 14:34:11,346 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file edits size 4 bytes.
+2017-07-12 14:34:11,351 INFO org.apache.hadoop.fs.FSNamesystem: fsOwner=ubuntu,ubuntu,adm,dialout,cdrom,plugdev,lpadmin,sambashare,admin
+2017-07-12 14:34:11,351 INFO org.apache.hadoop.fs.FSNamesystem: supergroup=supergroup
+2017-07-12 14:34:11,351 INFO org.apache.hadoop.fs.FSNamesystem: isPermissionEnabled=true
+2017-07-12 14:34:11,352 INFO org.apache.hadoop.dfs.Storage: Number of files = 8
+2017-07-12 14:34:11,353 INFO org.apache.hadoop.dfs.Storage: Number of files under construction = 0
+2017-07-12 14:34:11,353 INFO org.apache.hadoop.dfs.Storage: Edits file edits of size 4 edits # 0 loaded in 0 seconds.
+2017-07-12 14:34:11,357 INFO org.apache.hadoop.dfs.Storage: Image file of size 1158 saved in 0 seconds.
+2017-07-12 14:34:11,364 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 14:34:11,394 INFO org.apache.hadoop.dfs.NameNode.Secondary: Posted URL 0.0.0.0:50070putimage=1&port=50090&machine=192.168.1.155&token=-16:450459036:0:1499859251000:1499859251260
+2017-07-12 14:34:11,424 WARN org.apache.hadoop.dfs.NameNode.Secondary: Checkpoint done. New Image Size: 1158
+2017-07-12 15:34:11,465 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 15:34:11,467 WARN org.apache.hadoop.dfs.Storage: Checkpoint directory /home/ubuntu/old_hadoop_temp/dfs/namesecondary is added.
+2017-07-12 15:34:11,481 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file fsimage size 1158 bytes.
+2017-07-12 15:34:11,483 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file edits size 4 bytes.
+2017-07-12 15:34:11,489 INFO org.apache.hadoop.fs.FSNamesystem: fsOwner=ubuntu,ubuntu,adm,dialout,cdrom,plugdev,lpadmin,sambashare,admin
+2017-07-12 15:34:11,489 INFO org.apache.hadoop.fs.FSNamesystem: supergroup=supergroup
+2017-07-12 15:34:11,489 INFO org.apache.hadoop.fs.FSNamesystem: isPermissionEnabled=true
+2017-07-12 15:34:11,490 INFO org.apache.hadoop.dfs.Storage: Number of files = 8
+2017-07-12 15:34:11,491 INFO org.apache.hadoop.dfs.Storage: Number of files under construction = 0
+2017-07-12 15:34:11,491 INFO org.apache.hadoop.dfs.Storage: Edits file edits of size 4 edits # 0 loaded in 0 seconds.
+2017-07-12 15:34:11,495 INFO org.apache.hadoop.dfs.Storage: Image file of size 1158 saved in 0 seconds.
+2017-07-12 15:34:11,502 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 15:34:11,530 INFO org.apache.hadoop.dfs.NameNode.Secondary: Posted URL 0.0.0.0:50070putimage=1&port=50090&machine=192.168.1.155&token=-16:450459036:0:1499862851000:1499862851404
+2017-07-12 15:34:11,559 WARN org.apache.hadoop.dfs.NameNode.Secondary: Checkpoint done. New Image Size: 1158
+2017-07-12 16:34:11,603 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 16:34:11,605 WARN org.apache.hadoop.dfs.Storage: Checkpoint directory /home/ubuntu/old_hadoop_temp/dfs/namesecondary is added.
+2017-07-12 16:34:11,617 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file fsimage size 1158 bytes.
+2017-07-12 16:34:11,619 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file edits size 4 bytes.
+2017-07-12 16:34:11,625 INFO org.apache.hadoop.fs.FSNamesystem: fsOwner=ubuntu,ubuntu,adm,dialout,cdrom,plugdev,lpadmin,sambashare,admin
+2017-07-12 16:34:11,625 INFO org.apache.hadoop.fs.FSNamesystem: supergroup=supergroup
+2017-07-12 16:34:11,625 INFO org.apache.hadoop.fs.FSNamesystem: isPermissionEnabled=true
+2017-07-12 16:34:11,626 INFO org.apache.hadoop.dfs.Storage: Number of files = 8
+2017-07-12 16:34:11,627 INFO org.apache.hadoop.dfs.Storage: Number of files under construction = 0
+2017-07-12 16:34:11,627 INFO org.apache.hadoop.dfs.Storage: Edits file edits of size 4 edits # 0 loaded in 0 seconds.
+2017-07-12 16:34:11,631 INFO org.apache.hadoop.dfs.Storage: Image file of size 1158 saved in 0 seconds.
+2017-07-12 16:34:11,638 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 16:34:11,668 INFO org.apache.hadoop.dfs.NameNode.Secondary: Posted URL 0.0.0.0:50070putimage=1&port=50090&machine=192.168.1.155&token=-16:450459036:0:1499866451000:1499866451540
+2017-07-12 16:34:11,703 WARN org.apache.hadoop.dfs.NameNode.Secondary: Checkpoint done. New Image Size: 1158
+2017-07-12 17:34:11,745 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 17:34:11,746 WARN org.apache.hadoop.dfs.Storage: Checkpoint directory /home/ubuntu/old_hadoop_temp/dfs/namesecondary is added.
+2017-07-12 17:34:11,759 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file fsimage size 1158 bytes.
+2017-07-12 17:34:11,760 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file edits size 4 bytes.
+2017-07-12 17:34:11,766 INFO org.apache.hadoop.fs.FSNamesystem: fsOwner=ubuntu,ubuntu,adm,dialout,cdrom,plugdev,lpadmin,sambashare,admin
+2017-07-12 17:34:11,766 INFO org.apache.hadoop.fs.FSNamesystem: supergroup=supergroup
+2017-07-12 17:34:11,766 INFO org.apache.hadoop.fs.FSNamesystem: isPermissionEnabled=true
+2017-07-12 17:34:11,767 INFO org.apache.hadoop.dfs.Storage: Number of files = 8
+2017-07-12 17:34:11,768 INFO org.apache.hadoop.dfs.Storage: Number of files under construction = 0
+2017-07-12 17:34:11,769 INFO org.apache.hadoop.dfs.Storage: Edits file edits of size 4 edits # 0 loaded in 0 seconds.
+2017-07-12 17:34:11,773 INFO org.apache.hadoop.dfs.Storage: Image file of size 1158 saved in 0 seconds.
+2017-07-12 17:34:11,780 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 17:34:11,810 INFO org.apache.hadoop.dfs.NameNode.Secondary: Posted URL 0.0.0.0:50070putimage=1&port=50090&machine=192.168.1.155&token=-16:450459036:0:1499870051000:1499870051681
+2017-07-12 17:34:11,844 WARN org.apache.hadoop.dfs.NameNode.Secondary: Checkpoint done. New Image Size: 1158
+2017-07-12 18:34:11,888 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 18:34:11,890 WARN org.apache.hadoop.dfs.Storage: Checkpoint directory /home/ubuntu/old_hadoop_temp/dfs/namesecondary is added.
+2017-07-12 18:34:11,902 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file fsimage size 1158 bytes.
+2017-07-12 18:34:11,904 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file edits size 4 bytes.
+2017-07-12 18:34:11,910 INFO org.apache.hadoop.fs.FSNamesystem: fsOwner=ubuntu,ubuntu,adm,dialout,cdrom,plugdev,lpadmin,sambashare,admin
+2017-07-12 18:34:11,910 INFO org.apache.hadoop.fs.FSNamesystem: supergroup=supergroup
+2017-07-12 18:34:11,910 INFO org.apache.hadoop.fs.FSNamesystem: isPermissionEnabled=true
+2017-07-12 18:34:11,911 INFO org.apache.hadoop.dfs.Storage: Number of files = 8
+2017-07-12 18:34:11,912 INFO org.apache.hadoop.dfs.Storage: Number of files under construction = 0
+2017-07-12 18:34:11,912 INFO org.apache.hadoop.dfs.Storage: Edits file edits of size 4 edits # 0 loaded in 0 seconds.
+2017-07-12 18:34:11,916 INFO org.apache.hadoop.dfs.Storage: Image file of size 1158 saved in 0 seconds.
+2017-07-12 18:34:11,921 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 18:34:11,949 INFO org.apache.hadoop.dfs.NameNode.Secondary: Posted URL 0.0.0.0:50070putimage=1&port=50090&machine=192.168.1.155&token=-16:450459036:0:1499873651000:1499873651820
+2017-07-12 18:34:11,975 WARN org.apache.hadoop.dfs.NameNode.Secondary: Checkpoint done. New Image Size: 1158
+2017-07-12 19:34:12,024 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 19:34:12,026 WARN org.apache.hadoop.dfs.Storage: Checkpoint directory /home/ubuntu/old_hadoop_temp/dfs/namesecondary is added.
+2017-07-12 19:34:12,042 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file fsimage size 1158 bytes.
+2017-07-12 19:34:12,044 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file edits size 4 bytes.
+2017-07-12 19:34:12,049 INFO org.apache.hadoop.fs.FSNamesystem: fsOwner=ubuntu,ubuntu,adm,dialout,cdrom,plugdev,lpadmin,sambashare,admin
+2017-07-12 19:34:12,049 INFO org.apache.hadoop.fs.FSNamesystem: supergroup=supergroup
+2017-07-12 19:34:12,049 INFO org.apache.hadoop.fs.FSNamesystem: isPermissionEnabled=true
+2017-07-12 19:34:12,050 INFO org.apache.hadoop.dfs.Storage: Number of files = 8
+2017-07-12 19:34:12,051 INFO org.apache.hadoop.dfs.Storage: Number of files under construction = 0
+2017-07-12 19:34:12,051 INFO org.apache.hadoop.dfs.Storage: Edits file edits of size 4 edits # 0 loaded in 0 seconds.
+2017-07-12 19:34:12,056 INFO org.apache.hadoop.dfs.Storage: Image file of size 1158 saved in 0 seconds.
+2017-07-12 19:34:12,063 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 19:34:12,095 INFO org.apache.hadoop.dfs.NameNode.Secondary: Posted URL 0.0.0.0:50070putimage=1&port=50090&machine=192.168.1.155&token=-16:450459036:0:1499877251000:1499877251958
+2017-07-12 19:34:12,138 WARN org.apache.hadoop.dfs.NameNode.Secondary: Checkpoint done. New Image Size: 1158
+2017-07-12 20:34:12,187 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 20:34:12,189 WARN org.apache.hadoop.dfs.Storage: Checkpoint directory /home/ubuntu/old_hadoop_temp/dfs/namesecondary is added.
+2017-07-12 20:34:12,202 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file fsimage size 1158 bytes.
+2017-07-12 20:34:12,204 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file edits size 4 bytes.
+2017-07-12 20:34:12,209 INFO org.apache.hadoop.fs.FSNamesystem: fsOwner=ubuntu,ubuntu,adm,dialout,cdrom,plugdev,lpadmin,sambashare,admin
+2017-07-12 20:34:12,210 INFO org.apache.hadoop.fs.FSNamesystem: supergroup=supergroup
+2017-07-12 20:34:12,210 INFO org.apache.hadoop.fs.FSNamesystem: isPermissionEnabled=true
+2017-07-12 20:34:12,211 INFO org.apache.hadoop.dfs.Storage: Number of files = 8
+2017-07-12 20:34:12,212 INFO org.apache.hadoop.dfs.Storage: Number of files under construction = 0
+2017-07-12 20:34:12,212 INFO org.apache.hadoop.dfs.Storage: Edits file edits of size 4 edits # 0 loaded in 0 seconds.
+2017-07-12 20:34:12,217 INFO org.apache.hadoop.dfs.Storage: Image file of size 1158 saved in 0 seconds.
+2017-07-12 20:34:12,224 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 20:34:12,253 INFO org.apache.hadoop.dfs.NameNode.Secondary: Posted URL 0.0.0.0:50070putimage=1&port=50090&machine=192.168.1.155&token=-16:450459036:0:1499880852000:1499880852109
+2017-07-12 20:34:12,289 WARN org.apache.hadoop.dfs.NameNode.Secondary: Checkpoint done. New Image Size: 1158
+2017-07-12 21:34:12,335 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 21:34:12,337 WARN org.apache.hadoop.dfs.Storage: Checkpoint directory /home/ubuntu/old_hadoop_temp/dfs/namesecondary is added.
+2017-07-12 21:34:12,349 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file fsimage size 1158 bytes.
+2017-07-12 21:34:12,351 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file edits size 4 bytes.
+2017-07-12 21:34:12,358 INFO org.apache.hadoop.fs.FSNamesystem: fsOwner=ubuntu,ubuntu,adm,dialout,cdrom,plugdev,lpadmin,sambashare,admin
+2017-07-12 21:34:12,358 INFO org.apache.hadoop.fs.FSNamesystem: supergroup=supergroup
+2017-07-12 21:34:12,358 INFO org.apache.hadoop.fs.FSNamesystem: isPermissionEnabled=true
+2017-07-12 21:34:12,359 INFO org.apache.hadoop.dfs.Storage: Number of files = 8
+2017-07-12 21:34:12,359 INFO org.apache.hadoop.dfs.Storage: Number of files under construction = 0
+2017-07-12 21:34:12,360 INFO org.apache.hadoop.dfs.Storage: Edits file edits of size 4 edits # 0 loaded in 0 seconds.
+2017-07-12 21:34:12,363 INFO org.apache.hadoop.dfs.Storage: Image file of size 1158 saved in 0 seconds.
+2017-07-12 21:34:12,369 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 21:34:12,397 INFO org.apache.hadoop.dfs.NameNode.Secondary: Posted URL 0.0.0.0:50070putimage=1&port=50090&machine=192.168.1.155&token=-16:450459036:0:1499884452000:1499884452266
+2017-07-12 21:34:12,424 WARN org.apache.hadoop.dfs.NameNode.Secondary: Checkpoint done. New Image Size: 1158
+2017-07-12 22:34:12,472 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 22:34:12,473 WARN org.apache.hadoop.dfs.Storage: Checkpoint directory /home/ubuntu/old_hadoop_temp/dfs/namesecondary is added.
+2017-07-12 22:34:12,487 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file fsimage size 1158 bytes.
+2017-07-12 22:34:12,489 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file edits size 4 bytes.
+2017-07-12 22:34:12,495 INFO org.apache.hadoop.fs.FSNamesystem: fsOwner=ubuntu,ubuntu,adm,dialout,cdrom,plugdev,lpadmin,sambashare,admin
+2017-07-12 22:34:12,495 INFO org.apache.hadoop.fs.FSNamesystem: supergroup=supergroup
+2017-07-12 22:34:12,496 INFO org.apache.hadoop.fs.FSNamesystem: isPermissionEnabled=true
+2017-07-12 22:34:12,496 INFO org.apache.hadoop.dfs.Storage: Number of files = 8
+2017-07-12 22:34:12,497 INFO org.apache.hadoop.dfs.Storage: Number of files under construction = 0
+2017-07-12 22:34:12,497 INFO org.apache.hadoop.dfs.Storage: Edits file edits of size 4 edits # 0 loaded in 0 seconds.
+2017-07-12 22:34:12,501 INFO org.apache.hadoop.dfs.Storage: Image file of size 1158 saved in 0 seconds.
+2017-07-12 22:34:12,508 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 22:34:12,538 INFO org.apache.hadoop.dfs.NameNode.Secondary: Posted URL 0.0.0.0:50070putimage=1&port=50090&machine=192.168.1.155&token=-16:450459036:0:1499888052000:1499888052407
+2017-07-12 22:34:12,569 WARN org.apache.hadoop.dfs.NameNode.Secondary: Checkpoint done. New Image Size: 1158
+2017-07-12 23:34:12,611 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 23:34:12,613 WARN org.apache.hadoop.dfs.Storage: Checkpoint directory /home/ubuntu/old_hadoop_temp/dfs/namesecondary is added.
+2017-07-12 23:34:12,625 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file fsimage size 1158 bytes.
+2017-07-12 23:34:12,627 INFO org.apache.hadoop.dfs.NameNode.Secondary: Downloaded file edits size 4 bytes.
+2017-07-12 23:34:12,631 INFO org.apache.hadoop.fs.FSNamesystem: fsOwner=ubuntu,ubuntu,adm,dialout,cdrom,plugdev,lpadmin,sambashare,admin
+2017-07-12 23:34:12,632 INFO org.apache.hadoop.fs.FSNamesystem: supergroup=supergroup
+2017-07-12 23:34:12,632 INFO org.apache.hadoop.fs.FSNamesystem: isPermissionEnabled=true
+2017-07-12 23:34:12,633 INFO org.apache.hadoop.dfs.Storage: Number of files = 8
+2017-07-12 23:34:12,634 INFO org.apache.hadoop.dfs.Storage: Number of files under construction = 0
+2017-07-12 23:34:12,634 INFO org.apache.hadoop.dfs.Storage: Edits file edits of size 4 edits # 0 loaded in 0 seconds.
+2017-07-12 23:34:12,638 INFO org.apache.hadoop.dfs.Storage: Image file of size 1158 saved in 0 seconds.
+2017-07-12 23:34:12,646 INFO org.apache.hadoop.fs.FSNamesystem: Number of transactions: 0 Total time for transactions(ms): 0 Number of syncs: 0 SyncTimes(ms): 0 
+2017-07-12 23:34:12,675 INFO org.apache.hadoop.dfs.NameNode.Secondary: Posted URL 0.0.0.0:50070putimage=1&port=50090&machine=192.168.1.155&token=-16:450459036:0:1499891652000:1499891652548
+2017-07-12 23:34:12,709 WARN org.apache.hadoop.dfs.NameNode.Secondary: Checkpoint done. New Image Size: 1158
