@@ -88,6 +88,11 @@ interface InterTrackerProtocol extends VersionedProtocol {
   public long getIntermediateFileSize() throws IOException;
 
   /**
+   * Get the minspacestart calculated by the master
+   */
+  public long getMinspacestart() throws IOException;
+
+  /**
    * The task tracker calls this once, to discern where it can find
    * files referred to by the JobTracker
    */

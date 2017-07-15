@@ -41,6 +41,7 @@ import java.util.TreeSet;
 import java.util.Vector;
 import java.util.concurrent.LinkedBlockingQueue;
 
+import org.apache.hadoop.mapred.controller.Controller;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.hadoop.conf.Configuration;
@@ -68,6 +69,8 @@ import org.apache.hadoop.util.HostsFileReader;
 import org.apache.hadoop.util.ReflectionUtils;
 import org.apache.hadoop.util.StringUtils;
 import org.apache.hadoop.util.VersionInfo;
+
+import javax.naming.ldap.Control;
 
 /*******************************************************
  * JobTracker is the central location for submitting and 
@@ -1244,7 +1247,7 @@ public class JobTracker implements MRConstants, InterTrackerProtocol, JobSubmiss
    * tasks or jobs, and also 'reset' instructions during contingencies. 
    */
   public synchronized HeartbeatResponse heartbeat(TaskTrackerStatus status, 
-                                                  boolean initialContact, boolean acceptNewTasks, short responseId) 
+                                                  boolean initialContact, boolean acceptNewTasks, short responseId)
     throws IOException {
     LOG.debug("Got heartbeat from: " + status.getTrackerName() + 
               " (initialContact: " + initialContact + 
@@ -1342,6 +1345,11 @@ public class JobTracker implements MRConstants, InterTrackerProtocol, JobSubmiss
   public synchronized long getIntermediateFileSize() throws IOException {
     Sensor sensor = Sensor.getInstance();
     return sensor.getIntermediateFileSize();
+  }
+
+  public synchronized long getMinspacestart() throws IOException {
+    Controller controller = Controller.getInstance();
+    return controller.getCurrentMinspacestart();
   }
 
   /**

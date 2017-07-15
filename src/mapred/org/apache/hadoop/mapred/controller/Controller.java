@@ -11,19 +11,18 @@ public class Controller {
     public static final int DEFAULT_VIRTUAL_TARGET = 1;
     private int target;
     private int virtualTarget;
-    private long previous_minspacestart;
-
+    private long current_minspacestart;
     private Controller() {
         target = DEFAULT_TARGET;
         virtualTarget = DEFAULT_VIRTUAL_TARGET;
-        previous_minspacestart = 0;
+        current_minspacestart = 0;
     }
 
     public static Controller getInstance() {
         return instance;
     }
 
-    public long calculateMinspacestart(int currentMaxExceptions, int mapParallelism, long intermediateFileSize) {
+    public synchronized void changeMinspacestart(int currentMaxExceptions) {
         double result, a, p, p1, p2;
         p1 = 0.9;
         p2 = 0;
@@ -33,12 +32,15 @@ public class Controller {
         } else {
             p = p2;
         }
-        result = previous_minspacestart + (1 - p) / a * (virtualTarget - currentMaxExceptions);
+        result = current_minspacestart + (1 - p) / a * (virtualTarget - currentMaxExceptions);
         if (result < 0) {
             result = 0;
         }
-        previous_minspacestart = (long) result;
-        return (long) result;
+        current_minspacestart = (long) result;
+    }
+
+    public long getCurrentMinspacestart() {
+        return current_minspacestart;
     }
 
 }

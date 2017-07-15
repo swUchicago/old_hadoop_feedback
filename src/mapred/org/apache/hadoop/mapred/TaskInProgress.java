@@ -28,6 +28,7 @@ import java.util.Map;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
+import org.apache.hadoop.mapred.controller.Controller;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.hadoop.mapred.JobClient.RawSplit;
@@ -484,7 +485,7 @@ class TaskInProgress {
 
     // Initiating Sensor
     Sensor sensor = Sensor.getInstance();
-
+    Controller controller = Controller.getInstance();
 
     if (taskState == TaskStatus.State.FAILED) {
 
@@ -498,7 +499,7 @@ class TaskInProgress {
       System.out.println("TaskInProgress: bytes written = " + bytesWritten);
       sensor.setMapOutputSize(outputBytes);
       sensor.setBytesWritten(bytesWritten);
-
+      controller.changeMinspacestart(sensor.getMaxExceptions());
 
       numTaskFailures++;
       machinesWhereFailed.add(trackerHostName);

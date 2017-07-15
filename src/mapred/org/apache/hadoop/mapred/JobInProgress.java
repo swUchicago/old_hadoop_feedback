@@ -31,6 +31,7 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.Vector;
 
+import org.apache.hadoop.mapred.controller.Controller;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.hadoop.fs.FileSystem;
@@ -1327,6 +1328,9 @@ class JobInProgress {
     System.out.println("JobInProgress: bytes written = " + bytesWritten);
     sensor.setMapOutputSize(outputBytes);
     sensor.setBytesWritten(bytesWritten);
+
+    Controller controller = Controller.getInstance();
+    controller.changeMinspacestart(sensor.getMaxExceptions());
 
     LOG.info("Task '" + taskid + "' has completed " + tip.getTIPId() + 
              " successfully.");          

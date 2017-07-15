@@ -1025,9 +1025,6 @@ public class TaskTracker
                "' with reponseId '" + heartbeatResponseId);
     }
 
-    // Initialize controller and other variables to control minspacestart
-    Controller controller = Controller.getInstance();
-    int mapParallelism = maxCurrentMapTasks;
 
     //
     // Check if we should ask for a new Task
@@ -1038,9 +1035,8 @@ public class TaskTracker
       askForNewTask = (mapTotal < maxCurrentMapTasks || 
                        reduceTotal < maxCurrentReduceTasks) &&
                       acceptNewTasks;
-      long intermediateFileSize = jobClient.getIntermediateFileSize();
       int currentMaxException = jobClient.getCurrentMaxException();
-      localMinSpaceStart = controller.calculateMinspacestart(currentMaxException, mapParallelism, intermediateFileSize);
+      localMinSpaceStart = jobClient.getMinspacestart();
       System.out.println("Current Max Ex : " + currentMaxException + ", minspacestart : " + localMinSpaceStart);
     }
 
@@ -1056,7 +1052,7 @@ public class TaskTracker
     //
     HeartbeatResponse heartbeatResponse = jobClient.heartbeat(status, 
                                                               justStarted, askForNewTask, 
-                                                              heartbeatResponseId);
+                                                              heartbeatResponseId, mapParallelism);
       
     //
     // The heartbeat got through successfully!
