@@ -25,9 +25,9 @@ public class Controller {
 
     public long calculateMinspacestart(int currentMaxExceptions, int mapParallelism, long intermediateFileSize) {
         double result, a, p, p1, p2;
-        p1 = 1.5;
-        p2 = 3;
-        a = (double) 1 / (double) 157286400;
+        p1 = 0.9;
+        p2 = 0;
+        a = (double) -1 / (double) 157286400;
         if (currentMaxExceptions <= virtualTarget) {
             p = p1;
         } else {
