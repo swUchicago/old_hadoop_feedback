@@ -27,7 +27,7 @@ public class Controller {
         double result, a, p, p1, p2;
         p1 = 1.5;
         p2 = 3;
-        a = 1 / 157286400;
+        a = (double) 1 / (double) 157286400;
         if (currentMaxExceptions <= virtualTarget) {
             p = p1;
         } else {
