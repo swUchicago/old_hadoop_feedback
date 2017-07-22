@@ -43,7 +43,7 @@ public class Controller {
         double result, a, p, p1, p2;
         p1 = 0.9;
         p2 = 0;
-        a = (double) -1 / (double) mapParallelism * intermediateFileSize;
+        a = (double) -1 / (double) (mapParallelism * intermediateFileSize);
         if (currentMaxExceptions <= virtualTarget) {
             p = p1;
         } else {
