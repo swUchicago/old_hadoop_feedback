@@ -72,7 +72,7 @@ interface InterTrackerProtocol extends VersionedProtocol {
    *         fresh instructions.
    */
   HeartbeatResponse heartbeat(TaskTrackerStatus status, 
-                              boolean initialContact, boolean acceptNewTasks, short responseId)
+                              boolean initialContact, boolean acceptNewTasks, short responseId, int mapParallelism)
     throws IOException;
 
   // added new RPC function to transfer information for controller

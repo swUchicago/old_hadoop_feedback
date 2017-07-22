@@ -1052,7 +1052,7 @@ public class TaskTracker
     //
     HeartbeatResponse heartbeatResponse = jobClient.heartbeat(status, 
                                                               justStarted, askForNewTask, 
-                                                              heartbeatResponseId);
+                                                              heartbeatResponseId, maxCurrentMapTasks);
       
     //
     // The heartbeat got through successfully!

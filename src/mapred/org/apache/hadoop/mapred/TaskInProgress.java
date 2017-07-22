@@ -34,7 +34,7 @@ import org.apache.commons.logging.LogFactory;
 import org.apache.hadoop.mapred.JobClient.RawSplit;
 import org.apache.hadoop.mapred.controller.Sensor;
 import org.apache.hadoop.net.Node;
-
+import org.apache.hadoop.mapred.JobTracker;
 
 /*************************************************************
  * TaskInProgress maintains all the info needed for a
@@ -499,7 +499,7 @@ class TaskInProgress {
       System.out.println("TaskInProgress: bytes written = " + bytesWritten);
       sensor.setMapOutputSize(outputBytes);
       sensor.setBytesWritten(bytesWritten);
-      controller.changeMinspacestart(sensor.getMaxExceptions());
+      controller.changeMinspacestart(sensor.getMaxExceptions(), JobTracker.mapParallelism, sensor.getIntermediateFileSize());
 
       numTaskFailures++;
       machinesWhereFailed.add(trackerHostName);

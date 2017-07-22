@@ -39,6 +39,23 @@ public class Controller {
         current_minspacestart = (long) result;
     }
 
+    public synchronized void changeMinspacestart(int currentMaxExceptions, int mapParallelism, long intermediateFileSize) {
+        double result, a, p, p1, p2;
+        p1 = 0.9;
+        p2 = 0;
+        a = (double) -1 / (double) mapParallelism * intermediateFileSize;
+        if (currentMaxExceptions <= virtualTarget) {
+            p = p1;
+        } else {
+            p = p2;
+        }
+        result = current_minspacestart + (1 - p) / a * (virtualTarget - currentMaxExceptions);
+        if (result < 0) {
+            result = 0;
+        }
+        current_minspacestart = (long) result;
+    }
+
     public long getCurrentMinspacestart() {
         return current_minspacestart;
     }

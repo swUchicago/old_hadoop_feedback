@@ -94,6 +94,8 @@ public class JobTracker implements MRConstants, InterTrackerProtocol, JobSubmiss
   private int numTaskCacheLevels; // the max level to which we cache tasks
   private Set<Node> nodesAtMaxLevel = new HashSet<Node>();
 
+  public static int mapParallelism = 1;
+
   // system directories are world-wide readable and owner readable
   final static FsPermission SYSTEM_DIR_PERMISSION =
     FsPermission.createImmutable((short) 0733); // rwx-wx-wx
@@ -1247,7 +1249,7 @@ public class JobTracker implements MRConstants, InterTrackerProtocol, JobSubmiss
    * tasks or jobs, and also 'reset' instructions during contingencies. 
    */
   public synchronized HeartbeatResponse heartbeat(TaskTrackerStatus status, 
-                                                  boolean initialContact, boolean acceptNewTasks, short responseId)
+                                                  boolean initialContact, boolean acceptNewTasks, short responseId, int mapParallelism)
     throws IOException {
     LOG.debug("Got heartbeat from: " + status.getTrackerName() + 
               " (initialContact: " + initialContact + 
@@ -1261,7 +1263,9 @@ public class JobTracker implements MRConstants, InterTrackerProtocol, JobSubmiss
 
     // First check if the last heartbeat response got through
     String trackerName = status.getTrackerName();
-    
+
+    JobTracker.mapParallelism = mapParallelism;
+
     HeartbeatResponse prevHeartbeatResponse =
       trackerToHeartbeatResponseMap.get(trackerName);
 
