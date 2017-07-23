@@ -45,6 +45,7 @@ import org.apache.hadoop.metrics.MetricsRecord;
 import org.apache.hadoop.metrics.MetricsUtil;
 import org.apache.hadoop.net.NetUtils;
 import org.apache.hadoop.net.Node;
+import org.apache.hadoop.mapred.JobTracker;
 
 /*************************************************************
  * JobInProgress maintains all the info for keeping
@@ -1331,6 +1332,7 @@ class JobInProgress {
 
     Controller controller = Controller.getInstance();
     controller.changeMinspacestart(sensor.getMaxExceptions());
+//    controller.changeMinspacestart(sensor.getMaxExceptions(), JobTracker.mapParallelism, sensor.getIntermediateFileSize());
 
     LOG.info("Task '" + taskid + "' has completed " + tip.getTIPId() + 
              " successfully.");          
