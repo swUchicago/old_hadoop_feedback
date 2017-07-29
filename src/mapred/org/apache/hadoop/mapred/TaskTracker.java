@@ -17,6 +17,7 @@
  */
  package org.apache.hadoop.mapred;
 
+import java.awt.*;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -101,6 +102,8 @@ public class TaskTracker
 
   private boolean running = true;
 
+  public long startTime = 0;
+
   private LocalDirAllocator localDirAllocator;
   String taskTrackerName;
   String localHostname;
@@ -113,6 +116,7 @@ public class TaskTracker
     
   // last heartbeat response recieved
   short heartbeatResponseId = -1;
+
 
   /*
    * This is the last 'status' report sent by this tracker to the JobTracker.
@@ -1036,17 +1040,15 @@ public class TaskTracker
                        reduceTotal < maxCurrentReduceTasks) &&
                       acceptNewTasks;
       int currentMaxException = jobClient.getCurrentMaxException();
-//      localMinSpaceStart = jobClient.getMinspacestart();
-      localMinSpaceStart = minSpaceStart;
-//      System.out.println("Current Max Ex : " + currentMaxException + ", minspacestart : " + localMinSpaceStart);
+      localMinSpaceStart = jobClient.getMinspacestart();
+//      localMinSpaceStart = minSpaceStart;
+      System.out.println(startTime + "\t" + System.currentTimeMillis() + "\t" + currentMaxException + "\t" + localMinSpaceStart);
     }
 
     if (askForNewTask) {
       checkLocalDirs(fConf.getLocalDirs());
       askForNewTask = enoughFreeSpace(localMinSpaceStart);
     }
-
-    System.out.println("askNewTask -- " + askForNewTask);
 
     //
     // Xmit the heartbeat
@@ -1298,6 +1300,7 @@ public class TaskTracker
    * task tracker.
    */
   private void startNewTask(LaunchTaskAction action) {
+    startTime = System.currentTimeMillis();
     Task t = action.getTask();
     LOG.info("LaunchTaskAction: " + t.getTaskID());
     TaskInProgress tip = new TaskInProgress(t, this.fConf);

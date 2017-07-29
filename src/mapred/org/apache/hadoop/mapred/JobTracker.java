@@ -627,7 +627,8 @@ public class JobTracker implements MRConstants, InterTrackerProtocol, JobSubmiss
   private JobConf conf;
 
   private Thread taskCommitThread;
-  
+
+  public static long startTime = 0;
   /**
    * Start the JobTracker process, listen on the indicated port
    */
