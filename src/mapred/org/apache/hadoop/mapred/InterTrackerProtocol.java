@@ -92,6 +92,8 @@ interface InterTrackerProtocol extends VersionedProtocol {
    */
   public long getMinspacestart() throws IOException;
 
+  public long getJobStartTime() throws IOException;
+
   /**
    * The task tracker calls this once, to discern where it can find
    * files referred to by the JobTracker

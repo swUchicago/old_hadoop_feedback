@@ -1356,6 +1356,10 @@ public class JobTracker implements MRConstants, InterTrackerProtocol, JobSubmiss
     return controller.getCurrentMinspacestart();
   }
 
+  public synchronized long getJobStartTime() throws IOException {
+    return startTime;
+  }
+
   /**
    * Calculates next heartbeat interval using cluster size.
    * Heartbeat interval is incremented 1second for every 50 nodes. 
