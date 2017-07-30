@@ -70,8 +70,6 @@ import org.apache.hadoop.util.ReflectionUtils;
 import org.apache.hadoop.util.StringUtils;
 import org.apache.hadoop.util.VersionInfo;
 
-import javax.naming.ldap.Control;
-
 /*******************************************************
  * JobTracker is the central location for submitting and 
  * tracking MR jobs in a network environment.
@@ -95,6 +93,8 @@ public class JobTracker implements MRConstants, InterTrackerProtocol, JobSubmiss
   private Set<Node> nodesAtMaxLevel = new HashSet<Node>();
 
   public static int mapParallelism = 1;
+  public static boolean isJobSubmitted = false;
+  public static long jobStartTime = 0;
 
   // system directories are world-wide readable and owner readable
   final static FsPermission SYSTEM_DIR_PERMISSION =
@@ -1357,7 +1357,11 @@ public class JobTracker implements MRConstants, InterTrackerProtocol, JobSubmiss
   }
 
   public synchronized long getJobStartTime() throws IOException {
-    return startTime;
+    return jobStartTime;
+  }
+
+  public synchronized boolean getIsJobSubmitted() throws IOException {
+    return isJobSubmitted;
   }
 
   /**
@@ -1801,6 +1805,8 @@ public class JobTracker implements MRConstants, InterTrackerProtocol, JobSubmiss
    * the right TaskTracker/Block mapping.
    */
   public synchronized JobStatus submitJob(JobID jobId) throws IOException {
+    jobStartTime = System.currentTimeMillis();
+    isJobSubmitted = true;
     ensureRunning();
     if(jobs.containsKey(jobId)) {
       //job already running, don't start twice

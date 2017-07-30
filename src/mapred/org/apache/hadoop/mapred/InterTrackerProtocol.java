@@ -94,6 +94,8 @@ interface InterTrackerProtocol extends VersionedProtocol {
 
   public long getJobStartTime() throws IOException;
 
+  public boolean getIsJobSubmitted() throws IOException;
+
   /**
    * The task tracker calls this once, to discern where it can find
    * files referred to by the JobTracker

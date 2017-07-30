@@ -1042,7 +1042,9 @@ public class TaskTracker
       int currentMaxException = jobClient.getCurrentMaxException();
       localMinSpaceStart = jobClient.getMinspacestart();
 //      localMinSpaceStart = minSpaceStart;
-      System.out.println(jobClient.getJobStartTime() + "\t" + System.currentTimeMillis() + "\t" + currentMaxException + "\t" + localMinSpaceStart);
+      if (jobClient.getIsJobSubmitted()) {
+        System.out.println(jobClient.getJobStartTime() + "\t" + System.currentTimeMillis() + "\t" + currentMaxException + "\t" + localMinSpaceStart);
+      }
     }
 
     if (askForNewTask) {

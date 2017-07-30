@@ -45,7 +45,6 @@ import org.apache.hadoop.metrics.MetricsRecord;
 import org.apache.hadoop.metrics.MetricsUtil;
 import org.apache.hadoop.net.NetUtils;
 import org.apache.hadoop.net.Node;
-import org.apache.hadoop.mapred.JobTracker;
 
 /*************************************************************
  * JobInProgress maintains all the info for keeping
@@ -1422,6 +1421,7 @@ class JobInProgress {
       garbageCollect();
       LOG.info("Job " + this.status.getJobID() + 
                " has completed successfully.");
+      JobTracker.isJobSubmitted = true;
       JobHistory.JobInfo.logFinished(this.status.getJobID(), finishTime, 
                                      this.finishedMapTasks, 
                                      this.finishedReduceTasks, failedMapTasks, 
