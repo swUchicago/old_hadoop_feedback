@@ -1421,7 +1421,7 @@ class JobInProgress {
       garbageCollect();
       LOG.info("Job " + this.status.getJobID() + 
                " has completed successfully.");
-      JobTracker.isJobSubmitted = true;
+      JobTracker.isJobSubmitted = false;
       JobHistory.JobInfo.logFinished(this.status.getJobID(), finishTime, 
                                      this.finishedMapTasks, 
                                      this.finishedReduceTasks, failedMapTasks, 
