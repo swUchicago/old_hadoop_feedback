@@ -1606,7 +1606,6 @@ class JobInProgress {
       } else {
         jobCounters.incrCounter(Counter.NUM_FAILED_REDUCES, 1);
       }
-      JobTracker.isJobSubmitted = false;
     }
   }
 
