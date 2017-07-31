@@ -1438,7 +1438,6 @@ class JobInProgress {
   public synchronized void kill() {
     if ((status.getRunState() == JobStatus.RUNNING) ||
          (status.getRunState() == JobStatus.PREP)) {
-      JobTracker.isJobSubmitted = false;
       LOG.info("Killing job '" + this.status.getJobID() + "'");
       this.status = new JobStatus(status.getJobID(), 1.0f, 1.0f, JobStatus.FAILED);
       this.finishTime = System.currentTimeMillis();
@@ -1607,6 +1606,7 @@ class JobInProgress {
       } else {
         jobCounters.incrCounter(Counter.NUM_FAILED_REDUCES, 1);
       }
+      JobTracker.isJobSubmitted = false;
     }
   }
 
