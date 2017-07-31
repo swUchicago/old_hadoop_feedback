@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e002d9e-f829-4ea6-8ce5-00bbdf4f9bcf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mapred/org/apache/hadoop/mapred/InterTrackerProtocol.java" afterPath="$PROJECT_DIR$/src/mapred/org/apache/hadoop/mapred/InterTrackerProtocol.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mapred/org/apache/hadoop/mapred/JobInProgress.java" afterPath="$PROJECT_DIR$/src/mapred/org/apache/hadoop/mapred/JobInProgress.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mapred/org/apache/hadoop/mapred/TaskTracker.java" afterPath="$PROJECT_DIR$/src/mapred/org/apache/hadoop/mapred/TaskTracker.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,7 +28,7 @@
       <file leaf-file-name="JobTracker.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mapred/org/apache/hadoop/mapred/JobTracker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
+            <state relative-caret-position="-646">
               <caret line="96" column="38" lean-forward="false" selection-start-line="96" selection-start-column="38" selection-end-line="96" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -80,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JobInProgress.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JobInProgress.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mapred/org/apache/hadoop/mapred/JobInProgress.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1060">
-              <caret line="1440" column="63" lean-forward="false" selection-start-line="1440" selection-start-column="63" selection-end-line="1440" selection-end-column="63" />
+            <state relative-caret-position="320">
+              <caret line="1532" column="28" lean-forward="false" selection-start-line="1532" selection-start-column="28" selection-end-line="1532" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaskTracker.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TaskTracker.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/mapred/org/apache/hadoop/mapred/TaskTracker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="1045" column="8" lean-forward="false" selection-start-line="1045" selection-start-column="8" selection-end-line="1045" selection-end-column="8" />
+            <state relative-caret-position="246">
+              <caret line="1047" column="5" lean-forward="true" selection-start-line="1047" selection-start-column="5" selection-end-line="1047" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -115,7 +113,6 @@
       <find>System.out.println</find>
       <find>starttime</find>
       <find>getMinspacestart</find>
-      <find>minspacestart</find>
       <find>startTime</find>
       <find>getStartTime</find>
       <find>completed</find>
@@ -138,6 +135,7 @@
       <find>getJobStartTime</find>
       <find>Killing job</find>
       <find>isJob</find>
+      <find>minspacestart</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -154,10 +152,10 @@
         <option value="$PROJECT_DIR$/src/mapred/org/apache/hadoop/mapred/controller/Sensor.java" />
         <option value="$PROJECT_DIR$/src/mapred/org/apache/hadoop/mapred/controller/Controller.java" />
         <option value="$PROJECT_DIR$/src/mapred/org/apache/hadoop/mapred/TaskInProgress.java" />
-        <option value="$PROJECT_DIR$/src/mapred/org/apache/hadoop/mapred/TaskTracker.java" />
         <option value="$PROJECT_DIR$/src/mapred/org/apache/hadoop/mapred/InterTrackerProtocol.java" />
         <option value="$PROJECT_DIR$/src/mapred/org/apache/hadoop/mapred/JobTracker.java" />
         <option value="$PROJECT_DIR$/src/mapred/org/apache/hadoop/mapred/JobInProgress.java" />
+        <option value="$PROJECT_DIR$/src/mapred/org/apache/hadoop/mapred/TaskTracker.java" />
       </list>
     </option>
   </component>
@@ -680,12 +678,12 @@
       <workItem from="1500735903104" duration="1437000" />
       <workItem from="1500835134172" duration="1195000" />
       <workItem from="1501324918404" duration="1822000" />
-      <workItem from="1501421596683" duration="4270000" />
+      <workItem from="1501421596683" duration="4523000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17136000" />
+    <option name="totallyTimeSpent" value="17389000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="730" extended-state="0" />
@@ -1170,16 +1168,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mapred/org/apache/hadoop/mapred/TaskTracker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="1045" column="8" lean-forward="false" selection-start-line="1045" selection-start-column="8" selection-end-line="1045" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/mapred/org/apache/hadoop/mapred/InterTrackerProtocol.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -1190,9 +1178,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/mapred/org/apache/hadoop/mapred/JobInProgress.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="1532" column="28" lean-forward="false" selection-start-line="1532" selection-start-column="28" selection-end-line="1532" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/mapred/org/apache/hadoop/mapred/JobTracker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
+        <state relative-caret-position="-646">
           <caret line="96" column="38" lean-forward="false" selection-start-line="96" selection-start-column="38" selection-end-line="96" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1207,10 +1205,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mapred/org/apache/hadoop/mapred/JobInProgress.java">
+    <entry file="file://$PROJECT_DIR$/src/mapred/org/apache/hadoop/mapred/TaskTracker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1060">
-          <caret line="1440" column="63" lean-forward="false" selection-start-line="1440" selection-start-column="63" selection-end-line="1440" selection-end-column="63" />
+        <state relative-caret-position="246">
+          <caret line="1047" column="5" lean-forward="true" selection-start-line="1047" selection-start-column="5" selection-end-line="1047" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
