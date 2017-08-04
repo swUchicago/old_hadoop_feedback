@@ -1323,15 +1323,15 @@ class JobInProgress {
     Sensor sensor = Sensor.getInstance();
     sensor.deleteExceptions(taskid.getTaskID());
     long outputBytes = tip.getTaskStatus(taskid).getCounters().getGroup("org.apache.hadoop.mapred.Task$Counter").getCounterForName("MAP_OUTPUT_BYTES").getCounter();
-    System.out.println("JobInProgress: map output = " + outputBytes);
     long bytesWritten = tip.getTaskStatus(taskid).getCounters().getGroup("org.apache.hadoop.mapred.Task$FileSystemCounter").getCounterForName("LOCAL_WRITE").getCounter();
-    System.out.println("JobInProgress: bytes written = " + bytesWritten);
     sensor.setMapOutputSize(outputBytes);
     sensor.setBytesWritten(bytesWritten);
 
     Controller controller = Controller.getInstance();
     controller.changeMinspacestart(sensor.getMaxExceptions());
 //    controller.changeMinspacestart(sensor.getMaxExceptions(), JobTracker.mapParallelism, sensor.getIntermediateFileSize());
+
+    System.out.println("Task finished   " + sensor.getMaxExceptions());
 
     LOG.info("Task '" + taskid + "' has completed " + tip.getTIPId() + 
              " successfully.");          
